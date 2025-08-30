@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkylineProperty Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Container for the banner */
+    .banner {
+      width: 100%;
+      height: 100vh; /* full screen */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Desktop image (default) */
+    .banner {
+      background-image: url("/sky.png"); /* replace with your desktop image */
+    }
+
+    /* Mobile image */
+    @media (max-width: 768px) {
+      .banner {
+        background-image: url("/mobile-sky.png"); /* replace with your mobile image */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Full screen responsive banner -->
+  <div class="banner"></div>
+</body>
+</html>
